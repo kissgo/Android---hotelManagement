@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/editText1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="身份证号"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/editText3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="手机号"
+            app:layout_constraintTop_toTopOf="@+id/editText2"
+            android:layout_marginTop="44dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/editText2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="姓名"
+            app:layout_constraintTop_toBottomOf="@+id/editText1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
