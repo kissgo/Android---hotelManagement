@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.text6_1">
+          package="com.example.finaltext">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -15,15 +15,16 @@
 
 
         <service
-                android:name=".Music"
+                android:name="com.example.finaltext.Music"
                 android:enabled="true"
                 android:exported="true">
         </service>
 
-        <activity android:name=".relationActivity">
+        <activity android:name="com.example.finaltext.relationActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
         <activity
-                android:name=".login"
+                android:name="com.example.finaltext.login"
                 android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -32,10 +33,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".PersonActivity" android:launchMode="singleInstance" >
+        <activity android:name="com.example.finaltext.PersonActivity" android:launchMode="singleInstance" >
         </activity>
 
-        <activity android:name=".CourseActivity" android:launchMode="singleInstance">
+        <activity android:name="com.example.finaltext.CourseActivity" android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
